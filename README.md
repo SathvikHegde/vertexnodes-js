@@ -47,7 +47,7 @@ host.getServerUsage("server ID").then(usage => {
 ```
 
 Returns a JSON object like this:
-```json
+```
 {
   memory_bytes: 22933504,
   cpu_absolute: 0,
@@ -73,7 +73,7 @@ host.getServerDetails("server ID").then(details => {
 ```
 
 Returns a JSON object like this:
-```json
+```
 {
   server_owner: true,
   identifier: '05314470',
