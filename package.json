@@ -1,27 +1,27 @@
 {
-  "name": "somehost-js",
+  "name": "vertexnodes-js",
   "version": "1.0.0",
   "description": "Get your bot's details and control it without having to access the panel!",
-  "main": "SomeHost.js",
+  "main": "VertexNodes.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SathvikHegde/somehost-js.git"
+    "url": "git+https://github.com/SathvikHegde/vertexnodes-js.git"
   },
   "keywords": [
-    "somehost",
-    "api",
+    "vertexnodes",
+    "hosting",
     "pterodactyl",
-    "hosting"
+    "api"
   ],
   "author": "SathvikHegde",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/SathvikHegde/somehost-js/issues"
+    "url": "https://github.com/SathvikHegde/vertexnodes-js/issues"
   },
-  "homepage": "https://github.com/SathvikHegde/somehost-js#readme",
+  "homepage": "https://github.com/SathvikHegde/vertexnodes-js#readme",
   "dependencies": {
     "node-fetch": "^2.6.5"
   }

@@ -1,10 +1,10 @@
-[![Somehost Banner](https://images-ext-1.discordapp.net/external/UZAD0bDKzzdVdVEzIReYWZHwhTRdxh7gNJyFBj00Fl4/%3Fsize%3D256/https/cdn.discordapp.com/banners/824497581420838922/5b52e64ea233711c148684e2b3f5ef1f.png)](https://somehost.xyz/)
+[![Vertexnodes Banner](https://images-ext-1.discordapp.net/external/UtfunH7kvSARetXmX-PaDI54_kYYHBHfn7A0xipCTjM/%3Fsize%3D512/https/cdn.discordapp.com/icons/886667952617844826/95f55eb482f65ba79030f3919f2e4808.png)](https://vertexnodes.com)
 
-Get your bot's details and control it without having to access the panel! (hosted on [SomeHost](https://somehost.xyz/))
+Get your bot's details and control it without having to access the panel! (hosted on [VertexNodes](https://vertexnodes.com))
 
 ## How to get API Key
 
-1. Visit the panel [here](https://panel.somehost.xyz/).
+1. Visit the panel [here](https://panel.vertexnodes.com/).
 2. Click on the user icon in the top-right.
    ![Click on the user icon](https://i.imgur.com/Q5l34Vm.png[/img])
 3. Click on the "API Credentials" tab.
@@ -14,9 +14,7 @@ Get your bot's details and control it without having to access the panel! (hoste
 
 ## How to get Server ID
 
-**NOTE**: This server ID is different from what you get by doing `!me s` in discord.
-
-1.  Visit the panel [here](https://panel.somehost.xyz/).
+1.  Visit the panel [here](https://panel.vertexnodes.com).
 2. Click on your server's name.
 3. Navigate to the "Settings Tab".
 4. You will see your server ID under "DEBUG INFORMATION" tab.
@@ -26,7 +24,7 @@ Get your bot's details and control it without having to access the panel! (hoste
 Installation is done using the [`npm install` command](https://docs.npmjs.com/getting-started/installing-npm-packages-locally):
 
 ```bash
-$ npm install express
+$ npm install vertexnodes-js
 ```
 
 ## Examples
@@ -38,8 +36,8 @@ Get usage of the server.
 Parameters: ServerID
 
 ```js
-const SomeHost = require("somehost-js");
-const host = new SomeHost("API KEY");
+const VertexNodes = require("vertexnodes-js");
+const host = new VertexNodes("API KEY");
 
 host.getServerUsage("server ID").then(usage => {
    console.log(usage);
@@ -64,8 +62,8 @@ Get details of the server.
 Parameters: ServerID
 
 ```js
-const SomeHost = require("somehost-js");
-const host = new SomeHost("API KEY");
+const VertexNodes = require("vertexnodes-js");
+const host = new VertexNodes("API KEY");
 
 host.getServerDetails("server ID").then(details => {
    console.log(details);
@@ -81,7 +79,7 @@ Returns a JSON object like this:
   uuid: '05314470-0bee-4ab8-83c4-15d9f4d077d0',
   name: 'Server',
   node: 'Free Node - 4',
-  sftp_details: { ip: 'node4.somehost.xyz', port: 1234 },
+  sftp_details: { ip: 'node4.vertexnodes.com', port: 1234 },
   description: '',
   limits: {
     memory: 150,
@@ -114,8 +112,8 @@ Set the Powerstate of the server. State can be `start`, `stop`, `kill` or `resta
 Parameters: ServerID, Powerstate
 
 ```js
-const SomeHost = require("somehost-js");
-const host = new SomeHost("API KEY");
+const VertexNodes = require("vertexnodes-js");
+const host = new VertexNodes("API KEY");
 
 host.setPowerState("server ID", "start").then(() => {
    console.log("Successfully set powerstate to start");
@@ -131,8 +129,8 @@ Get the Powerstate of the server.
 Parameters: ServerID
 
 ```js
-const SomeHost = require("somehost-js");
-const host = new SomeHost("API KEY");
+const VertexNodes = require("vertexnodes-js");
+const host = new VertexNodes("API KEY");
 
 host.getPowerState("server ID").then(state => {
    console.log(state);
@@ -148,8 +146,8 @@ Sends a command to the server. The server must be online to send a command to it
 Parameters: ServerID, Command
 
 ```js
-const SomeHost = require("somehost-js");
-const host = new SomeHost("API KEY");
+const VertexNodes = require("vertexnodes-js");
+const host = new VertexNodes("API KEY");
 
 host.sendCommand("server ID", "say hello").then(() => {
    console.log("Sucesfully send the command");
